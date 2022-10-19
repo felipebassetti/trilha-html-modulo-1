@@ -1,62 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
-</head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+<html>
+    <head>
+        <title> My first HTML Website </title> 
+    </head>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+    <body>
+        <h1 id="start">First Steps with HTML</h1>
+        <small>@obassetti</small>
+        <hr>
+        <h2>Index:</h2>
+        <ul>
+            <li>
+                <a href="#servers">What is <strong>Servers</strong> ?</a></li>
+            <li>    
+                <a href="#types"><strong>Type of Servers</strong></a></li>
+            <li>
+                <a href="#clients">What is <strong> Clients</strong> ?</a></li>
+            <li>
+                <a href="#browsers">What is <strong>Browsers</strong> ?</a></li>
+            <li>
+                <a href="#pl">What is a <strong>"Programming Language"</strong> ?</a></li>
+            <li>
+                <a href="#question"><strong>Is the HTML a Programming language</strong> ?</a></li>
+            <li>
+                <a href="#tags">What is <strong>"Tags" in HTML</strong> ?</a></li>
+            <li>
+                <a href="#lists"> <strong>Ordered list</strong> and <strong>Unordered list;</strong></a></li>
+            <li>
+                <a href="#references"><strong>References;</strong></a></li>
+        </ul>
+        <hr>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <h2 id="servers"><strong>What is Servers ?</strong></h2>
+            <small><a href="#start">back to index</a></small>
+        <p>Basically <strong>server</strong>, is the "computer", who gonna storage the informations asked by the Clients.
+     In big companies they're bigger than we think and can storage a lot of informations, with no problems.
+     A conjunt of "Servers" can be denomited by "Data Centers". Example below: </p>
+     <img src="https://www.vertiv.com/4a82d3/globalassets/images/main-images/1600x480/1600x480-39024-datacenter_bluelights_244304_0.jpg" alt="Conjunt of Servers - Data Centers." 
+     width = "1525"  
+     height = "465">
+      
+     <hr>
+    
+     <h2 id="types"><strong>Types of Servers</strong></h2>
+     <small><a href="#start">back to index</a></small>
+            <ul>
+                <li> <strong>Proxy</strong> its a server, who make the intermediation between what was searched and the results, putting permissions in what can be acess or not. (ex: malicious websites)  </li>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+                <li> <strong>Firewall</strong> its a server, with a system, executing inside, who gonna make the extern safety. (ex: someone trying to send something to the server, the firewall will verify everything before, letting go to the server). </li> 
+                
+                <li> <strong>Email</strong> its a server, who storage the emails, both sent and received. </li>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+                <li> <strong>Intranet</strong> its a server, who the devices can comunicate directly with the server, without acess to the internet. (ex: www.company.instranet.com)</li>
+                
+                <li> <strong>DNS</strong> its a server, who every device have a DNS, so the server verify if, your device is allowed to go, redirecting to the IP, and whatever site you want to go.</li>
+            </ul>    
+            
+            <hr>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <h2 id="clients"><strong>What is Clients ?</strong></h2>
+            <small><a href="#start">back to index</a></small>
+        <p> Basically Is the part of the comunication (the device), who receive and consume the informations sent by the server. Ex: Smartphones/Computers who comunicate by the internet with the server. </p>
+        <img src="imageclient.png"
+        width="660"
+        height="404" > 
+            
+     <hr>
+  
+     <h2 id="browsers"><strong>What is Browsers ?</strong></h2> 
+     <small><a href="#start">back to index</a></small>
+        <p>The Browsers are basically, the programs created by companies, who are utilized to open/execute a arquive. Every Browser follow the rule of W3C patterns.</p>
+     <img src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2021/02/most-secure-browser-1.jpg" alt="Examples of Browsers" >
+    
+     <hr>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+     <h2 id="pl"><strong>What is a "Programming Language" ?</strong></h2>
+     <small><a href="#start">back to index</a></small>
+        <p>The conceit is: "Written and formal language, which specifies a set of instructions and rules used to generate programs (software).</p>
+     <img src="https://www.codecademy.com/resources/blog/content/images/2022/06/Most-Popular-Programming-Languages-2022-thumb.png" alt="Some Programming Languages"
+     width="660"
+     height="290">
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+     <hr>
 
-</body>
-</html>
+     <h2 id="question"><strong>Is the HTML a Programming language ?</strong></h2>  
+     <small><a href="#start">back to index</a></small>     
+            <p>The Awnser is <strong>"NO!"</strong>, HTML is not a programming language. HTML is a markup file, delimited texts who can be interpreted by the browser. 
+               Each delimiter has its a function and behavior.</p>
+     <img src="https://preview.redd.it/m41loixjno811.jpg?auto=webp&s=220c2181f2552495e1397d7c618e952c40824ec3"
+     width="660"
+     height="560" >           
+   
+     <hr>
+   
+     <h2 id="tags"><strong>What is "Tags" in HTML</strong></h2>   
+     <small><a href="#start">back to index</a></small>
+            <p><blockquote>" An HTML tag is a piece of markup language used to indicate the beginning and end of an HTML element in an HTML document." </blockquote> </p>
+    
+     <img src="https://assets.digitalocean.com/django_gunicorn_nginx_2004/articles/new_learners/html-element-diagram.png"
+     width="660"> 
+   
+     <hr>
+
+     <h2 id="lists"><strong>Ordered list and Unordered list</strong></h2>   
+     <small><a href="#start">back to index</a></small>       
+            <p>Allow web developers to group a set of related items in lists</p>
+     <img src="ordeunorde.png" alt="ordered and unordered"
+     width="800">
+   
+     <hr>
+
+     <h2 id="references"><strong>References</strong></h2>
+     <small><a href="#start">back to index</a></small>
+            <ol>
+                <li><a href="https://www.w3schools.com" target="blank">https://www.w3schools.com</a></li>
+                <li><a href="https://www.digitalocean.com/community/tutorials/what-is-an-html-tag" target="blank">https://www.digitalocean.com/community/tutorials/what-is-an-html-tag</a></li>
+                <li><a href="https://www.youtube.com/watch?v=VXeduv5uHbY" target="blank">https://www.youtube.com/watch?v=VXeduv5uHbY</a></li>
+                <li><a href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/a6c501f1-c8f1-41b0-ac09-9f30e79fcd01?back=/track/primeiros-passos-em-tecnologia&tab=undefined&moduleId=undefined" target="blank">https://web.dio.me/course/introducao-ao-html-na-pratica/learning/a6c501f1-c8f1-41b0-ac09-9f30e79fcd01?back=/track/primeiros-passos-em-tecnologia&tab=undefined&moduleId=undefined</a></li>
+            </ol>
+   
+            </body>
